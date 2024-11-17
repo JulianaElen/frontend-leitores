@@ -1,0 +1,46 @@
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #cdc0d2;
+}
+
+.image-container {
+  text-align: center;
+}
+
+.main-image {
+  max-width: 60%;
+  max-height: 80vh;
+  object-fit: contain;
+}
+
+.main-title {
+  font-size: 7rem;
+  font-weight: bold;
+  color: #634b6d;
+  font-family: "Sour Gummy";
+}
+
+/* Estilos do botão */
+.iniciar-pesquisa-btn {
+  bottom: 20px;
+  background-color: #634b6d;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 15px;
+  margin-top: 5rem;
+}
+
+.iniciar-pesquisa-btn:hover {
+  background-color: #4a3b4b;
+}

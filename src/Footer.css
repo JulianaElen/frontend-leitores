@@ -1,38 +1,38 @@
 .footer {
-    background-color: #5F5465; /* Cor de fundo do rodapé */
-    color: white; /* Cor do texto */
-    padding: 20px 0; /* Espaçamento interno */
-    position: fixed; /* Fixa o footer na tela */
+    background-color: #5F5465; 
+    color: white;
+    padding: 20px 0; 
+    position: relative; 
     left: 0;
-    bottom: 0; /* Posiciona no fundo */
-    width: 100%; /* Ocupa toda a largura da página */
-    text-align: center; /* Centraliza o conteúdo */
-    z-index: 1000; /* Garante que o footer fique acima de outros conteúdos */
+    bottom: 0; 
+    width: 100%; 
+    text-align: center; 
+    z-index: 1000;
   }
   
 
 .footer-content {
   display: flex;
-  flex-direction: column; /* Alinha os itens verticalmente */
+  flex-direction: column; 
   align-items: center;
 }
 
 .footer p {
-  margin: 10px 0; /* Espaçamento entre os itens */
+  margin: 10px 0;
   font-size: 14px;
 }
 
 .footer-links {
-  margin-top: 10px; /* Distância entre o texto e os links */
+  margin-top: 10px; 
 }
 
 .footer-links a {
   color: white;
   text-decoration: none;
-  margin: 0 15px; /* Distância entre os links */
+  margin: 0 15px; 
   font-size: 16px;
 }
 
 .footer-links a:hover {
-  text-decoration: underline; /* Efeito ao passar o mouse */
+  text-decoration: underline;
 }
