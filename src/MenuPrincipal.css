@@ -1,0 +1,146 @@
+.menu-container {
+  position: relative;
+  align-items: center;
+  position: relative;
+  padding: 15px;
+}
+
+.menu-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 30px;
+  height: 25px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  position: absolute;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.menu-toggle::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 45px; 
+  height: 45px; 
+  background-color: #c1b0c7e7;
+  border-radius: 50%; 
+  transform: translate(-50%, -50%) scale(0); 
+  transition: transform 0.3s ease-in-out; 
+  z-index: -1;
+}
+
+.menu-toggle:hover::before {
+  transform: translate(-50%, -50%) scale(1); 
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #5f5465;
+}
+
+.menu-icon {
+  display: flex; 
+  align-items: center; 
+  gap: 10px;
+  padding-top: 15px;
+}
+
+.nome-empresa {
+  margin-left: 15px;
+  font-size: 22px;
+  color: #5b5061;
+  font-weight: bold;
+  position: absolute;
+  z-index: 10;
+  font-family: "Sour Gummy";
+  left: 40px;
+  font-weight: 500;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  padding-top: 60px;
+  box-sizing: border-box;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  background: rgba(205, 192, 210, 0.9);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.7px);
+  -webkit-backdrop-filter: blur(9.7px);
+  border: 1px solid rgba(205, 192, 210, 0.64);
+}
+
+.menu.open {
+  transform: translateX(0);
+  opacity: 1;
+  background: rgba(205, 192, 210, 0.9);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.7px);
+  -webkit-backdrop-filter: blur(9.7px);
+  border: 1px solid rgba(205, 192, 210, 0.64);
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul li {
+  padding: 15px;
+}
+
+.menu ul li a {
+  color: #5f5465;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-sizing: border-box;
+
+  transform: scale(1);
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+.sobre-projeto {
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  text-align: center;
+  padding: 5px;
+}
+
+.sobre-projeto a {
+  color: #5f5465;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-left: 10px;
+}
+
+.menu ul li:hover {
+  background: rgba(205, 192, 210, 1);
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(205, 192, 210, 0.64);
+  transform: scale(1.05) translateZ(0);
+}
+
+.sobre-projeto:hover {
+  font-weight: 500;
+  text-decoration: underline;
+  transform: scale(1.05);
+}
+

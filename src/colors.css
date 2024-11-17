@@ -1,0 +1,14 @@
+/* Color Theme Swatches in Hex */
+.color-fundo { color: #CDC0D2; }
+.color-escuro { color: #5F5465; }
+.color-roxo { color: #6D5378; }
+
+/* Color Theme Swatches in RGBA */
+.color-fundo { color: rgba(205, 192, 210, 1); }
+.color-roxo-escuro { color: rgba(95, 84, 101, 1); }
+.color-roxo { color: rgba(109, 83, 120, 1); }
+
+/* Color Theme Swatches in HSLA */
+.ccolor-fundo { color: hsla(283, 16, 78, 1); }
+.color-roxo-escuro { color: hsla(278, 9, 36, 1); }
+.color-roxo { color: hsla(282, 18, 39, 1); }
