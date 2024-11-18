@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './MenuPrincipal.css'
+import { Link } from 'react-router-dom'
 
 export default function MenuPrincipal() {
     const [isOpen, setIsOpen] = useState(false)
@@ -20,12 +21,18 @@ export default function MenuPrincipal() {
                 </div>
                 <nav className={`menu ${isOpen ? 'open' : ''}`}>
                     <ul>
-                        <li><a href="#responder-pergunta">Responder Perguntas</a></li>
-                        <li><a href="#minhas-respostas">Minhas Respostas</a></li>
-                        <li><a href="#resultados-gerais">Resultados Gerais</a></li>
+                        <li><Link to="/" className="home-link" >
+                        Responder Perguntas
+                        </Link></li>
+                        <li><Link to="/respostas" className="minhas-respostas-link" >
+                        Minhas Respostas
+                        </Link></li>
+                        <li><Link to="/resultados" className="resultados-link" > Resultados Gerais</Link></li>
                     </ul>
                     <div className="sobre-projeto">
-                        <a href="#sobre-projeto">Conheça o Projeto</a>
+                        <Link to="/sobre" className="footer-link" >
+                            Conheça o projeto
+                        </Link>
                     </div>
                 </nav>
             </div>

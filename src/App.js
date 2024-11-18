@@ -1,15 +1,20 @@
 import React from 'react'
 import './App.css'
-import logo from './image/logo-png.png';
+import { Routes, Route } from 'react-router-dom'
+import Home from './pages/Home/Home'
+import Sobre from './pages/Sobre/Sobre'
+import Resultados from './pages/Resultados/Resultados'
+import Respostas from './pages/RespostasPessoais/Respostas'
+import Questionario from './pages/Questionario/Questionario'
 
 export default function App() {
   return (
-    <div className="main-content">
-    <div className="image-container">
-    <img src={logo} className="main-image" alt="Logo" />
-      <h1 className="main-title">Leitores</h1>
-    </div>
-    <button className="iniciar-pesquisa-btn">Iniciar Pesquisa</button>
-  </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/sobre" element={<Sobre />} />
+      <Route path="/questionario" element={<Questionario />} />
+      <Route path="/resultados" element={<Resultados />} />
+      <Route path="/respostas" element={<Respostas />} />
+    </Routes>
   )
 }
