@@ -1,0 +1,75 @@
+#perguntasContainer {
+  padding-top: 100px;
+  padding-left: 6em;
+  padding-right: 6em;
+  background-color: #cdc0d2;
+}
+
+h1 {
+  text-align: center;
+  color: #6d5378;
+  font-family: "Sour Gummy";
+  font-size: 52px;
+  margin-bottom: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+#perguntas {
+  font-size: 23px;
+  font-weight: bold;
+  margin: 20px 0 10px;
+}
+
+#opcoes {
+  margin-left: 20px;
+}
+
+#opcoes label {
+  display: block;
+  margin: 8px 0;
+  font-size: 20px;
+}
+
+#opcoes input {
+  margin-right: 8px;
+}
+
+input[type="text"] {
+  width: 80%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #b1b0b0;
+  border-radius: 4px;
+}
+
+#botaoConfirmacao {
+  margin: 20px 0;
+  font-size: 16px;
+}
+
+#botaoConfirmacao input {
+  margin-right: 8px;
+}
+
+button[type="submit"] {
+  width: 60%;
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #634b6d;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 10px auto;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+button[type="submit"]:hover {
+  background-color: #56415f;
+}

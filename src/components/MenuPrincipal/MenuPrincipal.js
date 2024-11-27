@@ -21,16 +21,16 @@ export default function MenuPrincipal() {
                 </div>
                 <nav className={`menu ${isOpen ? 'open' : ''}`}>
                     <ul>
-                        <li><Link to="/" className="home-link" >
-                        Responder Perguntas
+                        <li onClick={toggleMenu}><Link to="/" className="home-link" >
+                        Página Inicial
                         </Link></li>
-                        <li><Link to="/respostas" className="minhas-respostas-link" >
+                        <li onClick={toggleMenu}><Link to="/respostas" className="minhas-respostas-link" >
                         Minhas Respostas
                         </Link></li>
-                        <li><Link to="/resultados" className="resultados-link" > Resultados Gerais</Link></li>
+                        <li onClick={toggleMenu}><Link to="/resultados" className="resultados-link" > Resultados Gerais</Link></li>
                     </ul>
                     <div className="sobre-projeto">
-                        <Link to="/sobre" className="footer-link" >
+                        <Link to="/sobre" className="footer-link"  onClick={toggleMenu}>
                             Conheça o projeto
                         </Link>
                     </div>

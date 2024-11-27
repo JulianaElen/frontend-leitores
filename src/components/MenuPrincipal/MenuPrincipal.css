@@ -4,6 +4,7 @@
   position: relative;
   padding: 15px;
   position: fixed; 
+  z-index: 999;
 }
 
 .menu-toggle {
@@ -42,7 +43,7 @@
 .bar {
   width: 25px;
   height: 3px;
-  background-color: #5f5465;
+  background-color: #6D5378;
 }
 
 .menu-icon {
@@ -55,7 +56,7 @@
 .nome-empresa {
   margin-left: 15px;
   font-size: 22px;
-  color: #5b5061;
+  color: #6D5378;
   font-weight: bold;
   position: absolute;
   z-index: 10;
@@ -80,6 +81,7 @@
   backdrop-filter: blur(9.7px);
   -webkit-backdrop-filter: blur(9.7px);
   border: 1px solid rgba(205, 192, 210, 0.64);
+  
 }
 
 .menu.open {
