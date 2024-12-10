@@ -53,7 +53,7 @@ export default function GraficoRespostas() {
         }
 
         // Busca respostas para a pergunta
-        const responseRespostas = await fetch(`http://localhost:9082/respostas/pergunta/${perguntaId}`);
+        const responseRespostas = await fetch(`https://backend-leitores-julianaelens-projects.vercel.app/respostas/pergunta/${perguntaId}`);
         if (!responseRespostas.ok) {
           throw new Error('Nenhuma resposta encontrada para esta pergunta.');
         }
