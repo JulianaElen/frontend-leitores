@@ -21,7 +21,7 @@ export default function Respostas() {
     setRespostas(null);
 
     try {
-      const response = await fetch(`http://localhost:9082/respostas/usuario/${email}`);
+      const response = await fetch(`https://backend-leitores.vercel.app/respostas/usuario/${email}`);
 
       if (!response.ok) {
         throw new Error('Nenhuma resposta encontrada para este e-mail.');

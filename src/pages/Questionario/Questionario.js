@@ -94,7 +94,7 @@ export default function Questionario() {
 
     try {
       // Enviar o e-mail para criar o usuário
-      const userResponse = await fetch('http://localhost:9082/cadastro', {
+      const userResponse = await fetch('https://backend-leitores.vercel.app/cadastro', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -107,7 +107,7 @@ export default function Questionario() {
 
       // Enviar as respostas para o backend
       for (const [perguntaId, respostaChave] of Object.entries(respostas)) {
-        await fetch('http://localhost:9082/respostas', {
+        await fetch('https://backend-leitores.vercel.app/respostas', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -130,7 +130,7 @@ export default function Questionario() {
   // Função para verificar se o e-mail já está cadastrado
   const verificarEmail = async (email) => {
     try {
-      const response = await fetch(`http://localhost:9082/cadastro/${email}`);
+      const response = await fetch(`https://backend-leitores.vercel.app/cadastro/${email}`);
       if (response.status === 200) {
         return true;
       } else {
