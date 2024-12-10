@@ -12,7 +12,7 @@ export default function Home() {
                     <h1 className="main-title">Leitores</h1>
                 </div>
                 <Link to={'/Questionario'}>
-                <button className="iniciar-pesquisa-btn">Iniciar Pesquisa</button>
+                    <button className="iniciar-pesquisa-btn">Iniciar Pesquisa</button>
                 </Link>
             </div>
         </>

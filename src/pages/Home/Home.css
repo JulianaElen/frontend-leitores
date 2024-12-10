@@ -8,6 +8,7 @@
   justify-content: flex-end;
   align-items: center;
   background-color: #cdc0d2;
+  margin-top: 20px;
 }
 
 .image-container {
@@ -36,10 +37,20 @@
   border-radius: 15px;
   cursor: pointer;
   font-size: 16px;
-  margin-bottom: 15px;
-  margin-top: 5rem;
+  margin-bottom: 150px;
+  margin-top: 4rem;
 }
 
 .iniciar-pesquisa-btn:hover {
   background-color: #4a3b4b;
+}
+
+@media (max-width: 600px) {
+  .main-title {
+    font-size: 4rem; /* Título ainda menor */
+  }
+
+  .iniciar-pesquisa-btn {
+    margin-bottom: 250px;
+  }
 }

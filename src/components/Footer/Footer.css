@@ -15,29 +15,45 @@
   display: flex;
   flex-direction: column; 
   align-items: center;
+  gap: 10px;
 }
 
 .footer p {
-  margin: 10px 0;
-  font-size: 14px;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  opacity: 0.8; 
 }
 
 .footer-links {
   margin-top: 10px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px; 
 }
 
+.footer-links div {
+  display: flex;
+  align-items: center;
+  gap: 5px; 
+}
+
+.footer-link,
+.contact-link,
 .footer-links a {
-  color: white;
-  text-decoration: none;
-  margin: 0 15px; 
-  font-size: 16px;
+  color: #e2dde4; 
+  text-decoration: none; 
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
+.footer-link:hover,
+.contact-link:hover,
 .footer-links a:hover {
   text-decoration: underline;
 }
 
-/* Modal Overlay */
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -51,7 +67,6 @@
   z-index: 1100;
 }
 
-/* Modal Content */
 .modal-content {
   background-color: white;
   padding: 20px;
@@ -64,7 +79,6 @@
   max-height: 70vh;
 }
 
-/* Close Button */
 .close-modal {
   position: absolute;
   top: 10px;
@@ -86,4 +100,15 @@ ul {
 
 p {
   line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .footer-content {
+    gap: 20px;
+  }
+
+  .footer-links {
+    flex-direction: column; 
+    gap: 15px;
+  }
 }

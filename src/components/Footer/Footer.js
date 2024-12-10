@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import './Footer.css';
 import { Link } from 'react-router-dom';
-import { FaRegLightbulb } from 'react-icons/fa'; // Ícone de Lâmpada
-import { MdEmail } from 'react-icons/md'; // Ícone de Email
-import { AiFillFileText } from 'react-icons/ai'; // Ícone de Documento
+import { FaRegLightbulb } from 'react-icons/fa';
+import { MdEmail } from 'react-icons/md';
+import { AiFillFileText } from 'react-icons/ai';
 
 export default function Footer() {
+
+  // Termos de uso abertos ou fechados
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const mostraTermos = () => {
@@ -22,19 +24,20 @@ export default function Footer() {
         <div className="footer-content">
           <div className="footer-links">
             <div><FaRegLightbulb title="Lâmpada" />
-            <Link to="/sobre" className="footer-link">Conheça o projeto</Link>
+              <Link to="/sobre" className="footer-link">Conheça o projeto</Link>
             </div>
             <div><MdEmail title="Email" />
-            <a href="mailto:d2021005540@unifei.edu.br" className="contact-link">Contato</a>
+              <a href="mailto:d2021005540@unifei.edu.br" className="contact-link">Contato</a>
             </div>
             <div> <AiFillFileText title="Documento" />
-            <a href="#termos" onClick={mostraTermos}>Termos de Uso</a>
+              <a href="#termos" onClick={mostraTermos}>Termos de Uso</a>
             </div>
           </div>
           <p>&copy; 2024 Leitores. Todos os direitos reservados.</p>
         </div>
       </footer>
 
+      {/* Caixa de texto do Termos de uso  */}
       {isModalOpen && (
         <div className="modal-overlay">
           <div className="modal-content">
